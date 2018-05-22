@@ -6,6 +6,47 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <!--Encabezado-->
+    <header>
+      <hr/>
+      <h1> 🌎 ✹ ✯ Cifrado César ✍ ✸ 🌎 </h1>
+      <hr/>
+    </header>
+    <div>
+      <p>En criptografía, el cifrado César, también conocido como cifrado por desplazamiento,
+         código de César o desplazamiento de César , es una de las técnicas de cifrado más simples y más usadas.
+         Es un tipo de cifrado por sustitución en el que una letra en el texto original
+         es reemplazada por otra letra que se encuentra un número fijo de posiciones más adelante en el alfabeto.
+         Por ejemplo, con un desplazamiento de 3, la A sería sustituida por la D
+         (situada 3 lugares a la derecha de la A), la B sería reemplazada por la E, etc.
+         Este método debe su nombre a Julio César, que lo usaba para comunicarse con sus generales.
+      </p>
+      <p>
+        El cifrado César muchas veces puede formar parte de sistemas más complejos de codificación,
+        como el cifrado Vigenère, e incluso tiene aplicación en el sistema ROT13.
+        Como todos los cifrados de sustitución alfabética simple, el cifrado César se descifra con facilidad
+        y en la práctica no ofrece mucha seguridad en la comunicación.
+      </p>
+    </div>
+    <div>
+       <form>
+          <br>
+          Ingresa el texto :
+          <input type="text" name="text"><br>
+          <br>
+          Ingresa el numero de posiciones a dezplazar :
+          <input type="text" name="position"><br>
+          <br>
+          <h2> Que deseas hacer con el texto ?? </p>
+          <button type="button" id="button1" onclick=""  > Encriptar </button>
+          <button type="button" id="button2" onclick=""  > Desencriptar </button><br>
+        </form>
+          <br>
+          Mensaje :
+          <input type="text" name="text"><br>
+      </div>
+
+
     <div id="root"></div>
     <script src="cipher.js"></script>
     <script src="index.js"></script>
