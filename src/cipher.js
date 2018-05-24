@@ -1,5 +1,4 @@
 window.cipher = {
-
   encode :(offset,string)=>{
     var resultEncode = string + offset;
     return resultEncode;
