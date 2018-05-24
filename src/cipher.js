@@ -5,8 +5,7 @@ window.cipher = {
   } ,
 
   decode :(offset,string)=>{
-     var resultDecode = offset + string;
+    var resultDecode = offset + string;
     return resultDecode;
   }
-
 };
