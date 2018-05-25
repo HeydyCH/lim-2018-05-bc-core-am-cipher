@@ -4,12 +4,15 @@
 
 var btnCipher = document.getElementById("btnC");
 var btnDecipher = document.getElementById("btnD");
+var resultMessage = document.getElementById("resultM");
 
 function resultC(){
     var string=document.getElementById("text").value;
     var offset=document.getElementById("position").value;
     var string = string.toUpperCase();
-    alert(cipher.encode(offset,string));
+   
+    var result =cipher.encode(offset,string);
+    resultMessage.innerHTML = result;
 
 }
 
@@ -17,7 +20,8 @@ function resultD(){
     var string=document.getElementById("text").value;
     var offset=document.getElementById("position").value;
     var string = string.toUpperCase();
-    alert(cipher.decode(offset,string));
+    var result =cipher.decode(offset,string);
+    resultMessage.innerHTML = result;
 }
 
 

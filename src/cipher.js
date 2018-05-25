@@ -4,8 +4,6 @@ window.cipher = {
 
     var n =string.length;
     offset = parseInt(offset);
-    alert(string);
-    alert(offset);
 
     // CIFRADO DE CESAR o CIPHER CESAR
 
@@ -41,8 +39,6 @@ window.cipher = {
 
     var n =string.length;
     offset = parseInt(offset);
-    alert(string);
-    alert(offset);
 
     // DESCIFRADO DE CESAR o DESCIPHER CAESAR
     var i=0;
