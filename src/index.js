@@ -1,20 +1,29 @@
 
-console.log(cipher.encode(33,"A"));
-console.log(cipher.decode(33,"K"));
+//console.log(cipher.encode(33,"A"));
+//console.log(cipher.decode(33,"K"));
 
 var btnCipher = document.getElementById("btnC");
+var btnDecipher = document.getElementById("btnD");
 
-function result(){
+function resultC(){
     var string=document.getElementById("text").value;
-    alert(string);
     var offset=document.getElementById("position").value;
-    alert(offset);
-    console.log(cipher.encode(offset,string));
+    var string = string.toUpperCase();
+    alert(cipher.encode(offset,string));
 
 }
 
-btnCipher.addEventListener("click",result);
+function resultD(){
+    var string=document.getElementById("text").value;
+    var offset=document.getElementById("position").value;
+    var string = string.toUpperCase();
+    alert(cipher.decode(offset,string));
+}
 
+
+
+btnCipher.addEventListener("click",resultC);
+btnDecipher.addEventListener("click",resultD);
 
 /*
 function result(){
