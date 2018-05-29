@@ -22,10 +22,10 @@ function resultD(){
     string=document.getElementById("text").value;
     offset=document.getElementById("position").value;
     string = string.toUpperCase();
+    
     var result =cipher.decode(offset,string);
     resultMessage.innerHTML = result;
 }
-
 
 
 btnCipher.addEventListener("click",resultC);

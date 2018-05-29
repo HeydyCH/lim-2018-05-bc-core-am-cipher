@@ -67,12 +67,8 @@ window.cipher = {
 
     return {
 
-      encode:(string)=> { 
-        return cipher.encode(offset,string)
-      },
-      decode:(string)=> {
-        return cipher.decode(offset,string)
-      }
+      encode(string){ return cipher.encode(offset,string)},
+      decode(string){ return cipher.decode(offset,string)}
 
     }
 
