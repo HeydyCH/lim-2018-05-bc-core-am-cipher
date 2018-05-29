@@ -66,10 +66,8 @@ window.cipher = {
     // window.result ={}
 
     return {
-
       encode(string){ return cipher.encode(offset,string)},
       decode(string){ return cipher.decode(offset,string)}
-
     }
 
   }
