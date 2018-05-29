@@ -22,7 +22,7 @@
 
  ***
 
- Realizado por **HEYDY** en **[Laboratoria](http://talento.laboratoria.la/).
+    Realizado por **HEYDY** en [Laboratoria](http://talento.laboratoria.la/).
 
 
 
