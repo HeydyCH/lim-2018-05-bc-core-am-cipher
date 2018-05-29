@@ -8,7 +8,7 @@ window.cipher = {
     // CIFRADO DE CESAR o CIPHER CESAR
 
     var i=0;
-    var resultEncode = " " ;
+    var resultEncode = "" ;
     for(i=0 ; i<n ;i++){
 
         if (string[i]!= " "){
@@ -42,7 +42,7 @@ window.cipher = {
 
     // DESCIFRADO DE CESAR o DESCIPHER CAESAR
     var i=0;
-    var resultDecode = " " ;
+    var resultDecode = "" ;
     for(i=0 ; i<n ;i++){
         if (string[i]!= " "){
 
@@ -58,12 +58,31 @@ window.cipher = {
           resultDecode = resultDecode + " " ;
         }
     }
-    return(resultDecode);
+    return(resultDecode);    
+  },
+
+  createCipherWithOffset:(offset)=>{
+
+    // window.result
+
+    return  {
+
+      encode:(string)=> { 
+        return cipher.encode(offset,string)
+      },
+      decode:(string)=> {
+        return cipher.decode(offset,string)
+      }
+
+    }
+
+  }
 
 
-    /*
+
+  /*
     var resultDecode = offset + string;
     return resultDecode;
     */
-  }
 };
+
