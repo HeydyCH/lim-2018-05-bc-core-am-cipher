@@ -34,13 +34,14 @@ describe('cipher', () => {
     it('debería ser una función', () => {
       assert.equal(typeof cipher.createCipherWithOffset, 'function');
     });
-
-    it('debería retornar un objeto con dos funciones (encode y decode) con offset fijado');
     
-    /*it('debería retornar un objeto con dos funciones (encode y decode) con offset fijado',()=>{
-      assert.deepStrictEqual({ a = { n: 0 } }, { a = { n: 0 } }, "My message goes here");
+   //it('debería retornar un objeto con dos funciones (encode y decode) con offset fijado');
+    
+    it('debería retornar un objeto con dos funciones (encode y decode) con offset fijado',()=>{
+      assert.property(cipher.createCipherWithOffset(33),'encode');
+      assert.property(cipher.createCipherWithOffset(33),'decode');
     })
-    */
+    
    
 
   });

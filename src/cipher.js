@@ -63,9 +63,9 @@ window.cipher = {
 
   createCipherWithOffset:(offset)=>{
 
-    // window.result
+    // window.result ={}
 
-    return  {
+    return {
 
       encode:(string)=> { 
         return cipher.encode(offset,string)
@@ -77,8 +77,6 @@ window.cipher = {
     }
 
   }
-
-
 
   /*
     var resultDecode = offset + string;
