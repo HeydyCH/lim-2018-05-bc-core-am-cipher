@@ -22,7 +22,6 @@ function resultD(){
     string=document.getElementById("text").value;
     offset=document.getElementById("position").value;
     string = string.toUpperCase();
-    
     result =cipher.decode(offset,string);
     resultMessage.innerHTML = result;
 }
