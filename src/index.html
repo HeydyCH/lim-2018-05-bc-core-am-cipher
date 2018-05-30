@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
   <head>
     <meta charset="utf-8">
     <title>Caesar Cipher</title>
@@ -9,25 +9,21 @@
     <!--Encabezado-->
     <header>
       <hr/>
-      <h1> 🌎 ✹ ✯ Cifrado César ✍ ✸ 🌎 </h1>
+      <h1> 🌎 ✹ ✯ CIFRADO CESAR ONLINE ✍ ✸ 🌎 </h1>
       <hr/>
     </header>
-    <div>
-      <p>En criptografía, el cifrado César, también conocido como cifrado por desplazamiento,
-        código de César o desplazamiento de César , es una de las técnicas de cifrado más simples y más usadas.
-        Es un tipo de cifrado por sustitución en el que una letra en el texto original
-        es reemplazada por otra letra que se encuentra un número fijo de posiciones más adelante en el alfabeto.
-        Por ejemplo, con un desplazamiento de 3, la A sería sustituida por la D
-        (situada 3 lugares a la derecha de la A), la B sería reemplazada por la E, etc.
-        Este método debe su nombre a Julio César, que lo usaba para comunicarse con sus generales.
-      </p>
-      <p>
-        El cifrado César muchas veces puede formar parte de sistemas más complejos de codificación,
-        como el cifrado Vigenère, e incluso tiene aplicación en el sistema ROT13.
-        Como todos los cifrados de sustitución alfabética simple, el cifrado César se descifra con facilidad
-        y en la práctica no ofrece mucha seguridad en la comunicación.
-      </p>
-    </div>
+    <div class="message">
+      <h3> Hola 🙋🏻️ Cifra y Descifrar tu Mensaje : 😁  </h3>
+      <!--p> Instrucciones de uso:
+          <ol>
+            <li>Ingresa tu mensaje: <strong> ex HOLA MUNDO</strong></li>
+            <li>Ingresa el nro de espacios : <strong>33</strong> </li>
+            <li>Aplasta el boton ya sea cifrar o descifrar : <strong>cifrar</strong></li>
+            <li>Listo te mostrara la rpta : <strong>ex OVSH TBUKV </strong> </li>
+          </ol>       
+      </p> 
+      <h2><strong>Ahorra correlo tu mismo 😁 !!! </strong> </h2-->
+    </div> 
     <form>
       <br>
       Ingresa el texto :
@@ -43,6 +39,14 @@
       Mensaje :
       <textarea name ="result"  id ="resultM" placeholder="Resultado"></textarea><br>
     </form>
+    <center><img src="../img/secreto.gif" alt=""></center>
+    <div> <!-- Pie de Pagina-->
+      <footer>
+        <hr/>
+        <p>Realizado por Heydy Carrasco en <strong>Laboratoria</strong></p>
+        <br>
+      </footer>
+    </div>
     <script src="cipher.js"></script>
     <script src="index.js"></script>
   </body>

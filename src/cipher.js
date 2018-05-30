@@ -64,12 +64,12 @@ window.cipher = {
   createCipherWithOffset:(offset)=>{
 
     // window.result ={}
-
     return {
+      //encode:(string)=>{ cipher.encode(offset,string)},
+      //decode:(string)=>{ cipher.decode(offset,string)}
       encode(string){ return cipher.encode(offset,string)},
       decode(string){ return cipher.decode(offset,string)}
     }
-
   }
 
   /*
