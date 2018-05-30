@@ -27,28 +27,22 @@
         Como todos los cifrados de sustitución alfabética simple, el cifrado César se descifra con facilidad
         y en la práctica no ofrece mucha seguridad en la comunicación.
       </p>
-    
     </div>
-    <div>
-      <form>
-        <br>
-        Ingresa el texto :
-        <input type="text" name="text" id ="text"><br>
-        <br>
-        Ingresa el numero de posiciones a dezplazar :
-        <input type="text" name="position" id="position"><br>
-        <br>
-      </form>
-    </div>
-    <h2>Que deseas hacer con el texto ??</h2>
-    <button id="btnC">CIPHER</button>
-    <button id="btnD">DECIPHER</button><br>
-    <p id="demo"></p>
-    <p id="demo1"></p>
-
-    <br>
-     Mensaje :
-    <output type="result" name="result" id ="resultM"></output><br>
+    <form>
+      <br>
+      Ingresa el texto :
+      <input type="text" name="text" id ="text" placeholder="Ingresa el texto">
+      Ingresa el numero de posiciones a dezplazar :
+      <input type="text" name="position" id="position" placeholder="Ingresa el Nro">
+      <h2>Que deseas hacer con el texto ??</h2>
+      <!--button id="btnC">CIPHER</button>
+      <button id="btnD">DECIPHER</button><br-->
+      <input type="button" class="button" id="btnC" value= "Cifrar" />
+      <input type="button" class="button" id="btnD" value = "Descifrar" />
+      <br>
+      Mensaje :
+      <textarea name ="result"  id ="resultM" placeholder="Resultado"></textarea><br>
+    </form>
     <script src="cipher.js"></script>
     <script src="index.js"></script>
   </body>

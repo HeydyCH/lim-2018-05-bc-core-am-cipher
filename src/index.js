@@ -7,13 +7,13 @@ var offset = 0 ;
 var btnCipher = document.getElementById("btnC");
 var btnDecipher = document.getElementById("btnD");
 var resultMessage = document.getElementById("resultM");
+var result = "";
 
 function resultC(){
     string=document.getElementById("text").value;
     offset=document.getElementById("position").value;
     string = string.toUpperCase();
-   
-    var result =cipher.encode(offset,string);
+    result =cipher.encode(offset,string);
     resultMessage.innerHTML = result;
 
 }
@@ -23,7 +23,7 @@ function resultD(){
     offset=document.getElementById("position").value;
     string = string.toUpperCase();
     
-    var result =cipher.decode(offset,string);
+    result =cipher.decode(offset,string);
     resultMessage.innerHTML = result;
 }
 
