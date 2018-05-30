@@ -26,7 +26,7 @@ window.cipher = {
             //console.log('La letra ' + string + ' cifrada es: ' + cipherCesar_letter);
             resultEncode = resultEncode + cipherCesar_letter ;
 
-          }/*else if(Ascii_letter>=97 && Ascii_letter<=122 ){
+          }else if(Ascii_letter>=97 && Ascii_letter<=122 ){
             //resultEncode  = resultEncode + "*" ;
             cipherCesar_number = (Ascii_letter - 97 + offset )% 26 + 97;
             cipherCesar_letter = String.fromCharCode(cipherCesar_number);
@@ -34,7 +34,7 @@ window.cipher = {
 
           }else{
             resultEncode  = resultEncode + string[i] ;
-          }*/
+          }
         }else{
           resultEncode = resultEncode + " " ;
         }

@@ -19,13 +19,11 @@ header{
     height:400px;
 }
 
-
 .message{
     margin: 30px 0px 30px 0px; /*superior derecho  inferior izquierdo*/
     font-size: 15px; 
     background-position: center ;
 }
-
 
 form{
     width: 450px ; /* Ancho de 450 px*/

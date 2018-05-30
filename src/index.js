@@ -12,7 +12,7 @@ var result = "";
 function resultC(){
     string=document.getElementById("text").value;
     offset=document.getElementById("position").value;
-    string = string.toUpperCase();
+    //string = string.toUpperCase();
     result =cipher.encode(offset,string);
     resultMessage.innerHTML = result;
 
