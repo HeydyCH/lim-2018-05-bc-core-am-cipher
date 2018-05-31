@@ -2,16 +2,16 @@ window.cipher = {
 
   encode :(offset,string)=>{
 
-    var n =string.length;
+    let n =string.length;
     offset = parseInt(offset);
 
     // CIFRADO DE CESAR o CIPHER CESAR
 
-    var i=0;
-    var resultEncode = "" ;
-    var Ascii_letter =0;
-    var cipherCesar_number=0;
-    var cipherCesar_letter = "";
+    let i=0;
+    let resultEncode = "" ;
+    let Ascii_letter =0;
+    let cipherCesar_number=0;
+    let cipherCesar_letter = "";
 
     for(i=0 ; i<n ;i++){
         if (string[i]!= " "){
@@ -49,13 +49,13 @@ window.cipher = {
   decode :(offset,string)=>{
 
     // DESCIFRADO DE CESAR o DESCIPHER CAESAR
-    var n =string.length;
+    let n =string.length;
     offset = parseInt(offset);
-    var Ascii_letter =0;
-    var cipherCesar_number=0;
-    var cipherCesar_letter = "";
-    var i=0;
-    var resultDecode = "" ;
+    let Ascii_letter =0;
+    let cipherCesar_number=0;
+    let cipherCesar_letter = "";
+    let i=0;
+    let resultDecode = "" ;
 
     for(i=0 ; i<n ;i++){
         if (string[i]!= " "){
@@ -70,7 +70,7 @@ window.cipher = {
               //alert('La letra ' + string+ ' cifrada es: ' + cipherCesar_letter);
               resultDecode = resultDecode + cipherCesar_letter ;
 
-            }/*else if(Ascii_letter>=97 && Ascii_letter<=122 ){
+            }else if(Ascii_letter>=97 && Ascii_letter<=122 ){
 
               cipherCesar_number = 122 - (122-Ascii_letter + offset)% 26;  
               cipherCesar_letter = String.fromCharCode(cipherCesar_number);
@@ -80,7 +80,7 @@ window.cipher = {
 
               resultDecode = resultDecode + string[i] ;
 
-            }*/ 
+            }
         }else{
           resultDecode = resultDecode + " " ;
         }

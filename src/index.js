@@ -2,18 +2,19 @@
 //console.log(cipher.encode(33,"A"));
 //console.log(cipher.decode(33,"K"));
 
-var string = "";
-var offset = 0 ;
-var btnCipher = document.getElementById("btnC");
-var btnDecipher = document.getElementById("btnD");
-var resultMessage = document.getElementById("resultM");
-var result = "";
+let string = "";
+let offset = 0 ;
+let btnCipher = document.getElementById("btnC");
+let btnDecipher = document.getElementById("btnD");
+let resultMessage = document.getElementById("resultM");
+let result = "";
 
 function resultC(){
     string=document.getElementById("text").value;
     offset=document.getElementById("position").value;
     //string = string.toUpperCase();
-    result =cipher.encode(offset,string);
+    //result =cipher.encode(offset,string);
+    result=cipher.createCipherWithOffset(offset).encode(string)
     resultMessage.innerHTML = result;
 
 }
@@ -21,8 +22,9 @@ function resultC(){
 function resultD(){
     string=document.getElementById("text").value;
     offset=document.getElementById("position").value;
-    string = string.toUpperCase();
-    result =cipher.decode(offset,string);
+    //string = string.toUpperCase();
+    //result =cipher.decode(offset,string);
+    result =cipher.createCipherWithOffset(offset).decode(string)
     resultMessage.innerHTML = result;
 }
 
