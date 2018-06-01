@@ -61,18 +61,17 @@ textarea{
     min-width: 100%;
 }
 
-#btnC , #btnD, #limpiar{
+/* estilos para botones */
+.button {
     background: #ffe066; /*Color de fondo de botom*/
     color:black ; /*Color del texto del boton*/
-    padding:10px; /* del texto al borde del boton */
-    width: 40%;
+    padding: 10px; /* del texto al borde del boton */
     margin: 10px 0px 30px 0px; /*superior derecho  inferior izquierdo*/
     font-weight: bold;
 }
 
 #recargar{
     margin: 0px 0px 0px 0px; /*superior derecho  inferior izquierdo*/
-    width: 50px ; /*Ancho*/
     height: 40px ;  /*Alto*/
 }
 
@@ -85,8 +84,16 @@ textarea{
     font-weight: bold;
 }
 
+.container-btn {
+    text-align: center;
+}
+
+ #btnC, #btnD {
+     width: 44%;
+ }
+
 /*Cuando el mouse va encima del boton*/
-#btnC:hover{
+.button:hover {
     cursor: pointer;
 }
 
