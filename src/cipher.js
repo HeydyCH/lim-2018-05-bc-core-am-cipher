@@ -19,8 +19,6 @@ window.cipher = {
           //console.log(Ascii_letter);
           if(Ascii_letter>=65 && Ascii_letter<=90 ){
             cipherCesar_number = (Ascii_letter - 65 + offset )% 26 + 65; //Nro del cifrado Cesar
-            //console.log (Ascii_letter - 65 + offset );
-            //console.log('El nro de la letra cifrado ASCII es ' + cipherCesar_number);
             //Convertir de codigo ASCII a letra
             cipherCesar_letter = String.fromCharCode(cipherCesar_number);//Letra del cifrado Cesar
             //console.log('La letra ' + string + ' cifrada es: ' + cipherCesar_letter);
@@ -99,8 +97,4 @@ window.cipher = {
     }
   }
 
-  /*
-    var resultDecode = offset + string;
-    return resultDecode;
-    */
 };

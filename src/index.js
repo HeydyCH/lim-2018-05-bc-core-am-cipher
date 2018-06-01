@@ -1,7 +1,4 @@
 
-//console.log(cipher.encode(33,"A"));
-//console.log(cipher.decode(33,"K"));
-
 let string = "";
 let offset = 0 ;
 let btnCipher = document.getElementById("btnC");
@@ -48,11 +45,3 @@ btnCipher.addEventListener("click",resultCipher);
 btnDecipher.addEventListener("click",resultDecipher);
 btnClean.addEventListener("click",cleanField);
 btnRecharge.addEventListener("click",RechargeField);
-
-
-/*
-function result(){
-    document.getElementById("demo1").innerHTML = "Hello heydy";
-}
-document.getElementById("btnC").addEventListener("click",result);
-*/
