@@ -1,6 +1,6 @@
 body{
     background-image: url(../img/8.jpg);/*Fondo de mi pagina web completa*/
-    background-size:100vw 100vh ; /*100% Ancho de la ventana y 100% Alto de la ventana */ 
+    background-size: 100vw 100vh ; /*100% Ancho de la ventana y 100% Alto de la ventana */ 
     background-attachment: fixed ; /*Para que la imagen se queda fija*/
     margin : 0 ; /* Para quitarle el espaciado del body*/
     font-family: monospace;
@@ -17,6 +17,7 @@ header{
 #img{
     width:400px;
     height:400px;
+    margin: 20px 0px 10px 0px; /*superior derecho  inferior izquierdo*/
 }
 
 .message{
@@ -60,17 +61,35 @@ textarea{
     min-width: 100%;
 }
 
-#btnC , #btnD{
+#btnC , #btnD, #limpiar{
     background: #ffe066; /*Color de fondo de botom*/
     color:black ; /*Color del texto del boton*/
     padding:10px; /* del texto al borde del boton */
     width: 40%;
+    margin: 10px 0px 30px 0px; /*superior derecho  inferior izquierdo*/
+    font-weight: bold;
+}
+
+#recargar{
+    margin: 0px 0px 0px 0px; /*superior derecho  inferior izquierdo*/
+    width: 50px ; /*Ancho*/
+    height: 40px ;  /*Alto*/
+}
+
+#limpiar{
+    background: #ffe066; /*Color de fondo de botom*/
+    color:black ; /*Color del texto del boton*/
+    padding:10px; /* del texto al borde del boton */
+    margin: 10px 0px 30px 0px; /*superior derecho  inferior izquierdo*/
+    width: 100%;
+    font-weight: bold;
 }
 
 /*Cuando el mouse va encima del boton*/
 #btnC:hover{
     cursor: pointer;
 }
+
 
 /*Condicionales*/
 /*max-width ancho como max 480px*/
@@ -83,6 +102,6 @@ textarea{
 footer{
     text-align: center;
     background:rgba(8, 18, 29, 0.801);
-    margin: 30px 0px 30px 0px; /*superior derecho  inferior izquierdo*/
+    margin: 30px 0px 10px 0px; /*superior derecho  inferior izquierdo*/
     font-size: 15px; 
 }

@@ -7,9 +7,12 @@ let offset = 0 ;
 let btnCipher = document.getElementById("btnC");
 let btnDecipher = document.getElementById("btnD");
 let resultMessage = document.getElementById("resultM");
+let btnClean = document.getElementById("limpiar");
+let btnRecharge = document.getElementById("recargar");
+
 let result = "";
 
-function resultC(){
+function resultCipher(){
     string=document.getElementById("text").value;
     offset=document.getElementById("position").value;
     //string = string.toUpperCase();
@@ -19,7 +22,7 @@ function resultC(){
 
 }
 
-function resultD(){
+function resultDecipher(){
     string=document.getElementById("text").value;
     offset=document.getElementById("position").value;
     //string = string.toUpperCase();
@@ -28,9 +31,24 @@ function resultD(){
     resultMessage.innerHTML = result;
 }
 
+function cleanField(){
+    resultMessage.innerHTML = "";
+}
 
-btnCipher.addEventListener("click",resultC);
-btnDecipher.addEventListener("click",resultD);
+function RechargeField(){
+    
+    //alert("el string es : " + string + " -> yo : " + result);
+    document.getElementById("text").value= result;
+    resultMessage.innerHTML = "";
+
+    
+}
+
+btnCipher.addEventListener("click",resultCipher);
+btnDecipher.addEventListener("click",resultDecipher);
+btnClean.addEventListener("click",cleanField);
+btnRecharge.addEventListener("click",RechargeField);
+
 
 /*
 function result(){

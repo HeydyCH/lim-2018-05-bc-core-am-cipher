@@ -9,6 +9,7 @@
     <!--Encabezado-->
     <header>
       <hr/>
+      <br>
       <h1> 🌎 ✹ ✯ CIFRADO CESAR ONLINE ✍ ✸ 🌎 </h1>
       <hr/>
     </header>
@@ -24,17 +25,19 @@
       </p> 
       <h2><strong>Ahorra correlo tu mismo 😁 !!! </strong> </h2-->
     </div> 
-    <form>
+    <form name="form">
       <br>
       Ingresa el texto :
       <input type="text" name="text" id ="text" placeholder="Ingresa el texto">
       Ingresa el numero de posiciones a dezplazar :
-      <input type="text" name="position" id="position" placeholder="Ingresa el Nro">
+      <input type="number" name="position" id="position" placeholder="Ingresa el Nro">
       <h2>Que deseas hacer con el texto ??</h2>
       <!--button id="btnC">CIPHER</button>
       <button id="btnD">DECIPHER</button><br-->
       <input type="button" class="button" id="btnC" value= "Cifrar" />
+      <img src="../img/recargar.png" class="buttonRecharge" id="recargar">
       <input type="button" class="button" id="btnD" value = "Descifrar" />
+      <input type="reset" id="limpiar"  value="Limpiar"> 
       <br>
       Mensaje :
       <textarea name ="result"  id ="resultM" placeholder="Resultado"></textarea><br>
