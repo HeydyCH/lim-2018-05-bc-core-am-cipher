@@ -53,9 +53,12 @@ describe('cipher', () => {
       assert.isFunction(cipher.createCipherWithOffset(33).decode);
 
     })
-
-    it('cipher.createCipherWithOffset(33).encode("a") deberia retornar lo mismo que encode(33,"a")=h',()=>{
+ 
+    it('cipher.createCipherWithOffset(33).encode("ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz 0123456789") deberia retornar "HIJKLMNOPQRSTUVWXYZABCDEFGhijklmnopqrstuvwxyzabcdefg 0123456789"',()=>{
       assert.equal(cipher.createCipherWithOffset(33).encode("a"),'h');
+    })
+
+    it('cipher.createCipherWithOffset(33).decode("HIJKLMNOPQRSTUVWXYZABCDEFGhijklmnopqrstuvwxyzabcdefg 0123456789") deberia retornar "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz 0123456789"',()=>{
       assert.equal(cipher.createCipherWithOffset(33).decode("h"),'a');
     })
 

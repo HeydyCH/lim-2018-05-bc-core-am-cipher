@@ -24,25 +24,26 @@
             <li>Listo te mostrara la rpta : <strong>ex OVSH TBUKV </strong> </li>
           </ol>       
       </p> 
-      <h2><strong>Ahorra correlo tu mismo 😁 !!! </strong> </h2>
+      <h2><strong>Ahorra correlo tu mismo 😁 !!! </strong></h2>
     </div>  -->
 
     <form name="form">
       <br>
       <label>Ingresa el texto :</label>
-      <input type="text" name="text" id ="text" placeholder="Ingresa el texto">
+      <input type="text" name="text" id ="text" placeholder="Ingresa el texto" >
       <label>Ingresa el numero de posiciones a dezplazar :</label>
-      <input type="number" name="position" id="position" placeholder="Ingresa el Nro">
+      <input type="number" name="position" id="position" placeholder="Ingresa el Nro" min="1" max="1000" >
       <h2>Que deseas hacer con el texto ??</h2>
-      <!--button id="btnC">CIPHER</button>
-      <button id="btnD">DECIPHER</button><br-->
       <div class="container-btn">
         <input type="button" class="button" id="btnC" value= "Cifrar" />
         <input type="button" class="button" id="btnD" value = "Descifrar" />
       </div>
       <br>
+      <div>
+        <p id="warning"></p>
+      </div>
       <label>Mensaje :</label>
-      <textarea name ="result"  id ="resultM" placeholder="Resultado"></textarea><br>
+      <textarea name ="result"  id ="resultM" placeholder="Resultado" readonly ></textarea><br>
       <input type="button" id="recargar" class="button" value="Comprueba tu resultado">       
       <input type="reset" id="limpiar" class="button" value="Limpiar">       
     </form>
