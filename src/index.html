@@ -4,6 +4,8 @@
     <meta charset="utf-8">
     <title>Caesar Cipher</title>
     <link rel="stylesheet" href="style.css" />
+    <!-- Línea de código responsive -->
+    <meta name="viewport" content="width=device-width, initial-scale= 1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=yes">
   </head>
   <body>
     <!--Encabezado-->
@@ -32,16 +34,13 @@
       <label>Ingresa el texto :</label>
       <input type="text" name="text" id ="text" placeholder="Ingresa el texto" >
       <label>Ingresa el numero de posiciones a dezplazar :</label>
-      <input type="number" name="position" id="position" placeholder="Ingresa el Nro" min="1" max="1000" >
+      <input type="number" name="position" id="position" placeholder="Ingresa el Nro" min="1" step="10">
       <h2>Que deseas hacer con el texto ??</h2>
       <div class="container-btn">
         <input type="button" class="button" id="btnC" value= "Cifrar" />
         <input type="button" class="button" id="btnD" value = "Descifrar" />
       </div>
       <br>
-      <div>
-        <p id="warning"></p>
-      </div>
       <label>Mensaje :</label>
       <textarea name ="result"  id ="resultM" placeholder="Resultado" readonly ></textarea><br>
       <input type="button" id="recargar" class="button" value="Comprueba tu resultado">       
