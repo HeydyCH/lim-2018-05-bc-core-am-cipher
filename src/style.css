@@ -17,7 +17,7 @@ header{
 
 /* ESTILOS FORMULARIOS */
 
-form{
+.formulario{
     width: 450px ; /* Ancho de 450 px*/
     margin : Auto ; /* Para que lo centre el formulario */
     background:rgba(0,0,0,0.6); /* Color del Formulario y el ultimo nos dice la transparencia*/
@@ -28,11 +28,21 @@ form{
     font-size: 15px; 
 }
 
+.message{
+    width: 480px ; /* Ancho de 450 px*/
+    margin : Auto ; /* Para que lo centre el formulario */
+    background:rgba(0,0,0,0.5);
+    padding: 8px 5px ; /*Relleno : 10 manera vertical 20 horizontal*/
+    box-sizing: border-box ; /*El relleno se pondra dentro del formulario*/
+    margin-top: 5px;
+    font-size: 15px;
+    
+}
 
 
 h1,h2,h3{
     text-align: center;
-    margin : 0 ;
+    margin : 0px ;
     font-size: 20px; 
     margin-bottom: 20px;
 
@@ -56,18 +66,28 @@ textarea{
     min-width: 100%;
 }
 
+.Instruction{
+    color : rgb(233, 236, 28);
+    text-align: center;
+    font-size: 18px; 
+}
+
+
+
+
 
 /* ESTILOS BOTONES */
 
 .button {
-    background: #ffe066; /*Color de fondo de botom*/
+    background: #e2b607; /*Color de fondo de botom*/
     color:black ; /*Color del texto del boton*/
     padding: 10px; /* del texto al borde del boton */
     margin: 10px 0px 10px 0px; /*superior derecho  inferior izquierdo*/
     font-weight: bold;
 }
 
-#recargar{
+#recargar {
+    background: #ffe066;
     margin: 0px 0px 0px 0px; /*superior derecho  inferior izquierdo*/
     height: 40px ;  /*Alto*/
 }
