@@ -30,7 +30,7 @@ descifrarlo.
  * Persona con mensaje cifrado
  * Persona con mensaje a cifrar
 
-### Instalacion
+## Instalacion
   Esta aplicacion no necesita instalacion , solo debemos de ingresar al sgte enlace y podremos usarlo:
   [CIFRADO CESAR ONLINE](https://heydych.github.io/lim-2018-05-bc-core-am-cipher/src/)
 
@@ -44,17 +44,41 @@ descifrarlo.
 
   Vista Movil
 
-   ![cifradoCesarMovil](https://image.ibb.co/cJjov8/1_1.png)
-   ![cifradoCesarMovil3](https://image.ibb.co/kHuov8/1_3.png)
+  ![cifradoCesarMovil](https://image.ibb.co/cJjov8/1_1.png)
+  ![cifradoCesarMovil3](https://image.ibb.co/kHuov8/1_3.png)
 
-## Authors
+
+## Que es el Cifrado Cesar
+
+  El [cifrado César](https://en.wikipedia.org/wiki/Caesar_cipher) es uno de los primeros métodos de cifrado conocidos históricamente. Es un tipo de cifrado por sustitución en el que una letra en el texto original es reemplazada por otra letra que se encuentra un número fijo de posiciones más adelante en el alfabeto.
+
+  Por ejemplo si usáramos un desplazamiento de 3:
+
+  * Alfabeto sin cifrar: A B C D E F G H I J K L M N O P Q R S T U V W X Y Z
+  * Alfabeto cifrado: D E F G H I J K L M N O P Q R S T U V W X Y Z A B C
+
+  Actualmente todos los cifrados de sustitución alfabética simple, se descifran con facilidad y en la práctica no ofrece mucha seguridad en la comunicación,pero el cifrado César muchas veces puede formar parte de sistemas más complejos de codificación, como el cifrado Vigenère, e incluso tiene aplicación en el sistema ROT13.
+
+### UI
+
+  La interfaz del software debe permitir al usuario:
+
+  * Elegir un `offset` indicando cuántas posiciones queremos que el cifrado
+  desplace cada caracter
+  * Insertar un mensaje (texto) que queremos cifrar
+  * Ver el resultado del mensaje cifrado
+  * Insertar un mensaje (texto) a descifrar
+  * Ver el resultado del mensaje descifrado
+
+
+## Autor
 
 * **Heydy Carrasco** 
 
   Lista de mis [Proyectos](https://github.com/HeydyCH?tab=repositories).
 
  ***
-             Realizado por ** HEYDY CARRASCO ** 
+                Realizado por ** HEYDY CARRASCO ** 
 
 
 
